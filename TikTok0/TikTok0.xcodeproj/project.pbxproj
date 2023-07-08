@@ -27,8 +27,34 @@
 		0C50B97B2A5A1E8C008473AB /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C50B97A2A5A1E8C008473AB /* DatabaseManager.swift */; };
 		0C50B97D2A5A1E9A008473AB /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C50B97C2A5A1E9A008473AB /* AuthenticationManager.swift */; };
 		0C50B97F2A5A1EA7008473AB /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C50B97E2A5A1EA7008473AB /* HapticsManager.swift */; };
+		0C50B9822A5A2566008473AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C50B9812A5A2566008473AB /* GoogleService-Info.plist */; };
 		E489580F52F19274FA9817F4 /* Pods_TikTok0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D9E5B6F3CE9D300B883FD6 /* Pods_TikTok0.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		0C50B9832A5A26B1008473AB /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		0C50B9842A5A26B2008473AB /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
 		0C50B93A2A59E5E3008473AB /* TikTok0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTok0.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +79,7 @@
 		0C50B97A2A5A1E8C008473AB /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		0C50B97C2A5A1E9A008473AB /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		0C50B97E2A5A1EA7008473AB /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		0C50B9812A5A2566008473AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22D9E5B6F3CE9D300B883FD6 /* Pods_TikTok0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TikTok0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46BDBBE3C577D7B85AD6DF2 /* Pods-TikTok0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok0.release.xcconfig"; path = "Target Support Files/Pods-TikTok0/Pods-TikTok0.release.xcconfig"; sourceTree = "<group>"; };
 		E2BC52BA82F37F6434E6B2B5 /* Pods-TikTok0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TikTok0.debug.xcconfig"; path = "Target Support Files/Pods-TikTok0/Pods-TikTok0.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +126,7 @@
 				0C50B9552A59E658008473AB /* ViewModels */,
 				0C50B9562A59E669008473AB /* Views */,
 				0C50B94B2A59E5E5008473AB /* Info.plist */,
+				0C50B9812A5A2566008473AB /* GoogleService-Info.plist */,
 			);
 			path = TikTok0;
 			sourceTree = "<group>";
@@ -233,8 +261,11 @@
 				0C50B9372A59E5E3008473AB /* Frameworks */,
 				0C50B9382A59E5E3008473AB /* Resources */,
 				3564D770A9ED92C95576FDD2 /* [CP] Embed Pods Frameworks */,
+				0C50B9852A5A26BE008473AB /* ShellScript */,
 			);
 			buildRules = (
+				0C50B9842A5A26B2008473AB /* PBXBuildRule */,
+				0C50B9832A5A26B1008473AB /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -283,12 +314,30 @@
 			files = (
 				0C50B94A2A59E5E5008473AB /* LaunchScreen.storyboard in Resources */,
 				0C50B95D2A59E728008473AB /* Assets.xcassets in Resources */,
+				0C50B9822A5A2566008473AB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C50B9852A5A26BE008473AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		3564D770A9ED92C95576FDD2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
